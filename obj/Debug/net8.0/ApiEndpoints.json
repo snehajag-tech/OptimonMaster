@@ -1,0 +1,486 @@
+[
+  {
+    "ContainingType": "DashboardsAPI.Controllers.BoilersDashboardController",
+    "Method": "GetCPPDashboardlHistricalData",
+    "RelativePath": "api/BoilersDashboard/GetCPPDashboardlHistricalData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "assetParameterId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.BoilersDashboardController",
+    "Method": "GetHistoricalParametersData",
+    "RelativePath": "api/BoilersDashboard/getHistoricalParametersData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.CriticalDashboardController",
+    "Method": "GetCriticalHistoricalData",
+    "RelativePath": "api/CriticalDashboard/GetCriticalHistoricalData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CriticalParameterid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.CriticalDashboardController",
+    "Method": "GetCriticalParametersData",
+    "RelativePath": "api/CriticalDashboard/GetCriticalParametersData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.ExhaustDashboardController",
+    "Method": "GetExhasutHistricalData",
+    "RelativePath": "api/ExhaustDashboard/GetExhasutHistricalData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "assetParameterId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "deviceId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.GoldenBatchController",
+    "Method": "GetGoldeLclUclData",
+    "RelativePath": "api/GoldenBatch/GetGoldeLclUclData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "assetId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fromDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.GoldenBatchController",
+    "Method": "GetGoldenBatchAssets",
+    "RelativePath": "api/GoldenBatch/GetGoldenBatchAssets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.GoldenBatchController",
+    "Method": "GetGoldenBatchData",
+    "RelativePath": "api/GoldenBatch/GetGoldenBatchData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "from",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "to",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "assetId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.GoldenBatchController",
+    "Method": "GetGoldenBatchData_AllAssets",
+    "RelativePath": "api/GoldenBatch/GetGoldenBatchData_AllAssets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "from",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "to",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "buildingIDs",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "deviceIDs",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.GoldenBatchController",
+    "Method": "GetGoldenBatchData_AllPlants",
+    "RelativePath": "api/GoldenBatch/GetGoldenBatchData_AllPlants",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.GoldenBatchController",
+    "Method": "GetProcessCapabilityData",
+    "RelativePath": "api/GoldenBatch/GetProcessCapabilityData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "assetParameterId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.UHDashboardController",
+    "Method": "GetGainLossData",
+    "RelativePath": "api/UHDashboard/GainLoss",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "month",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.UHDashboardController",
+    "Method": "GetGainLossSummaryData",
+    "RelativePath": "api/UHDashboard/GainLossSummary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.UHDashboardController",
+    "Method": "GetOtherProductionData",
+    "RelativePath": "api/UHDashboard/OtherProduction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.UHDashboardController",
+    "Method": "GetProductionData",
+    "RelativePath": "api/UHDashboard/Production",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "month",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.UHDashboardController",
+    "Method": "GetQualityData",
+    "RelativePath": "api/UHDashboard/Quality",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "month",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.UHDashboardController",
+    "Method": "GetRatiosData",
+    "RelativePath": "api/UHDashboard/Ratios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "month",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.UHDashboardController",
+    "Method": "GetRawMaterialData",
+    "RelativePath": "api/UHDashboard/RawMaterialData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startMonth",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startYear",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "endMonth",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "endYear",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.UHDashboardController",
+    "Method": "GetSafetyDataByGivenMonthYear",
+    "RelativePath": "api/UHDashboard/SafetyDataByMonthYear",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startMonth",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startYear",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DashboardsAPI.Controllers.UHDashboardController",
+    "Method": "GetSectionPerformanceRatioData",
+    "RelativePath": "api/UHDashboard/SectionPerformanceRatio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "departmentId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "month",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
