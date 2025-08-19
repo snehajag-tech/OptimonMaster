@@ -1,17 +1,43 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddControllers();
-// Add services to the container.
+
+// Add CORS policy to allow requests from the React development server
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("ReactAppPolicy",
+        policyBuilder =>
+        {
+            policyBuilder.WithOrigins("http://localhost:5173")
+                         .AllowAnyHeader()
+                         .AllowAnyMethod();
+        });
+});
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.WriteIndented = true;
+        options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase; 
+    });
 
 var app = builder.Build();
 
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+}
 
-// Configure the HTTP request pipeline.
-app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+app.UseStaticFiles();
+app.UseRouting();
 
-app.UseHttpsRedirection();
+// Apply the CORS policy
+app.UseCors("ReactAppPolicy");
+
+app.UseAuthorization();
 
 app.MapControllers();
 
 app.Run();
-
-//             }
